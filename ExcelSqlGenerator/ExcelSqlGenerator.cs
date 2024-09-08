@@ -1,4 +1,4 @@
-﻿using ExcelDataReader;
+using ExcelDataReader;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +30,8 @@ namespace ExcelDocSQLGenerator
         }
 
         /*
+         * Debug Method. Run whatever experiments you want in here, it's tied to a hidden button in release.
+         * 
          URL for "documentation"
          https://github.com/ExcelDataReader/ExcelDataReader
          */
@@ -62,17 +64,6 @@ namespace ExcelDocSQLGenerator
                         reader.Read();
                         reader.GetValues(currentRow);
                         reader.Close();
-
-                        /*
-                        do
-                        {
-                            while (reader.Read())
-                            {
-                                Double test = reader.GetDouble(0);
-
-
-                            }
-                        } while (reader.NextResult());*/
 
                         // The result of each spreadsheet is in result.Tables
                     }
